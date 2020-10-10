@@ -1,0 +1,33 @@
+- alias: 'Notifica spegnimento luce camera alessio'
+  trigger:
+    platform: state
+    entity_id: light.luce_camera_alessio
+    from: 'off'
+    to: 'on'
+  action:
+  - service: notify.mobile_app_samsung_s9_alessio
+    data:
+      message: 'Accesa Luce Camera Alessio'
+      
+      
+      
+ ###### SYNC TASMOTA STATUS     
+      
+
+
+- alias: Sync Tasmota states
+  initial_state: true
+  trigger:
+      platform: homeassistant
+      event: start
+  action:
+    # sync state for devices with default fulltopics
+    - service: mqtt.publish
+      data:
+        topic: cmnd/tasmotas/state
+        payload: ''
+    # sync state for pre8.2 autodiscovery devices
+    - service: mqtt.publish
+      data:
+        topic: tasmotas/cmnd/state
+        payload: ''

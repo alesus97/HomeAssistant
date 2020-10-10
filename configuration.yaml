@@ -1,0 +1,75 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+homeassistant:
+  external_url: https://casacarusio.duckdns.org
+  internal_url: http://192.168.1.111:8123
+  
+  allowlist_external_dirs:
+   - /config
+
+
+http:
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+default_config:
+
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+hacs:
+  token: eb16fbd9fd54ec39aa5c2230fafe118af32e6917
+
+
+
+
+mobile_app:
+discovery:
+ios:
+cloud:
+  
+
+
+mqtt:
+    broker: core-mosquitto
+    username: DVES_USER
+    password: !secret mqtt_password 
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+#lovelace:
+#  mode: yaml
+
+light: !include lights.yaml         #Sonoff Mini
+sensor: !include sensors.yaml       #ESP32
+switch: !include switches.yaml      #Spine Blitzwolf SPH2
+cover: !include covers.yaml        #Persiane (Sonoff Dual)
+shopping_list:
+#customize: !include customize.yaml
+
+
+    
+    
+climate:
+  - platform: generic_thermostat
+    name: Riscaldamento
+    heater: switch.switch_sonoff_riscaldamento
+    target_sensor: sensor.temperatura_corridoio
+    min_temp: 15
+    max_temp: 30
+    ac_mode: False
+    target_temp: 17
+    cold_tolerance: 0.5
+    hot_tolerance: 0
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "off"
+    away_temp: 16

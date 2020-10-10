@@ -1,0 +1,60 @@
+##########################################     Sonoff Tasmota     ##########################################
+
+  - platform: mqtt
+    name: "Luce Camera Alessio"
+    state_topic: "stat/sonoffMini/LuceCameraAlessio/RESULT"  
+    value_template: "{{ value_json.POWER }}"
+    command_topic: "cmnd/sonoffMini/LuceCameraAlessio/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
+    availability_topic: "tele/sonoffMini/LuceCameraAlessio/LWT"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    qos: 1
+    retain: false
+    
+  - platform: mqtt
+    name: "Luce Corridoio"
+    state_topic: "stat/sonoffMini/LuceCorridoio/RESULT"  
+    value_template: "{{ value_json.POWER }}"
+    command_topic: "cmnd/sonoffMini/LuceCorridoio/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
+    availability_topic: "tele/sonoffMini/LuceCorridoio/LWT"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    qos: 1
+    retain: false
+    
+  - platform: mqtt
+    name: "Luce Soggiorno 1"
+    state_topic: "stat/sonoffMini/LuceSoggiorno1/RESULT"  
+    value_template: "{{ value_json.POWER }}"
+    command_topic: "cmnd/sonoffMini/LuceSoggiorno1/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
+    availability_topic: "tele/sonoffMini/LuceSoggiorno1/LWT"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    qos: 1
+    retain: false
+    
+  - platform: mqtt
+    name: "Luce Soggiorno 2"
+    state_topic: "stat/sonoffMini/LuceSoggiorno2/RESULT"  
+    value_template: "{{ value_json.POWER }}"
+    command_topic: "cmnd/sonoffMini/LuceSoggiorno2/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
+    availability_topic: "tele/sonoffMini/LuceSoggiorno2/LWT"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    qos: 1
+    retain: false
+    
+##########################################     Strisce Led Magic Home     ##########################################
+  - platform: flux_led
+    devices:
+      192.168.1.190:
+        name: "Striscia Led Camera Alessio"
+        mode: "rgb"
