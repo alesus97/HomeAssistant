@@ -33,3 +33,10 @@
     payload_not_available: "Offline"
     retain: false
     icon: mdi:radiator
+    
+#  - platform: wake_on_lan
+#    mac: "88:e9:fe:7e:d5:06"
+#    host: 192.168.1.5
+#    name: "Macbook Pro di Alessio"
+#    turn_on:
+#      service: shell_command.mac_off

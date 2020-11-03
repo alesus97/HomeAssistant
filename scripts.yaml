@@ -1,0 +1,12 @@
+start_netflix_philipstv:
+  alias: Start Netflix Philips TV
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Philips TV
+      command:
+      - power
+      - netflix
+    entity_id: remote.broadlink_rm3mini_alessio_remote
+  mode: single
+  icon: 'mdi: nerflix'

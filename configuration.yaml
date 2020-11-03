@@ -1,9 +1,13 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 homeassistant:
+  name: Casa
+  latitude: 40.836244
+  longitude: 14.201670
+  unit_system: metric
+  time_zone: Europe/Rome
   external_url: https://casacarusio.duckdns.org
   internal_url: http://192.168.1.111:8123
-  
-  allowlist_external_dirs:
+  allowlist_external_dirs: #Serve per far vedere il db dal sensore della dimensione
    - /config
 
 
@@ -20,15 +24,23 @@ frontend:
 hacs:
   token: eb16fbd9fd54ec39aa5c2230fafe118af32e6917
 
-
-
+spotcast:
+  sp_dc: !secret sp_dc
+  sp_key: !secret sp_key
 
 mobile_app:
 discovery:
 ios:
 cloud:
   
-
+  
+logger:
+  default: info
+  logs:
+    custom_components.hacs: debug
+    hacs: debug
+    queueman: debug
+    AIOGitHubAPI: debug
 
 mqtt:
     broker: core-mosquitto
@@ -52,7 +64,11 @@ switch: !include switches.yaml      #Spine Blitzwolf SPH2
 cover: !include covers.yaml        #Persiane (Sonoff Dual)
 shopping_list:
 #customize: !include customize.yaml
+history: !include history.yaml
+shell_command: !include shellCommands.yaml
 
+
+wake_on_lan:
 
     
     

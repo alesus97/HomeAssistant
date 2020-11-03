@@ -1,16 +1,14 @@
-custom_header:
-  compact_mode: true
-  background: var(--app-header-background-color)
-  elements_color: var(--app-header-text-color)
-  active_tab_color: var(--state-icon-active-color)
-  tab_indicator_color: var(--state-icon-active-color)
+#custom_header:
+#  compact_mode: true
+#  background: var(--app-header-background-color)
+#  elements_color: var(--app-header-text-color)
+#  active_tab_color: var(--state-icon-active-color)
+#  tab_indicator_color: var(--state-icon-active-color)
   
 iron-overlay-backdrop-filter: blur(10px) grayscale(50%)
 iron-overlay-backdrop-background-color: 'rgba(41,128,185,0.25)'
 
 resources:
-  - type: module
-    url: /hacsfiles/custom-header/custom-header.js
   - type: module
     url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
   - type: module
