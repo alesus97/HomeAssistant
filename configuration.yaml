@@ -67,10 +67,8 @@ shopping_list:
 history: !include history.yaml
 shell_command: !include shellCommands.yaml
 
-
 wake_on_lan:
-
-    
+smartir:
     
 climate:
   - platform: generic_thermostat
@@ -89,3 +87,11 @@ climate:
       minutes: 3
     initial_hvac_mode: "off"
     away_temp: 16
+    
+  - platform: smartir
+    name: Condizionatore Alessio
+    device_code: 1380
+    controller_data: remote.broadlink_rm3mini_alessio_remote
+    temperature_sensor: sensor.temperatura_camera_alessio
+    humidity_sensor: sensor.temperatura_camera_alessio
+    power_sensor: sensor.temperatura_camera_alessio

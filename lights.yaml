@@ -2,12 +2,12 @@
 
   - platform: mqtt
     name: "Luce Camera Alessio"
-    state_topic: "stat/sonoffMini/LuceCameraAlessio/RESULT"  
-    value_template: "{{ value_json.POWER }}"
-    command_topic: "cmnd/sonoffMini/LuceCameraAlessio/POWER"
+    state_topic: "stat/sonoffDual/LuceCameraAlessio/RESULT"  
+    value_template: "{{ value_json.POWER1 }}"
+    command_topic: "cmnd/sonoffDual/LuceCameraAlessio/POWER1"
     payload_on: "ON"
     payload_off: "OFF"
-    availability_topic: "tele/sonoffMini/LuceCameraAlessio/LWT"
+    availability_topic: "tele/sonoffDual/LuceCameraAlessio/LWT"
     payload_available: "Online"
     payload_not_available: "Offline"
     qos: 1
