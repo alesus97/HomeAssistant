@@ -1,12 +1,12 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 homeassistant:
   name: Casa
-  latitude: 40.836244
-  longitude: 14.201670
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
   unit_system: metric
   time_zone: Europe/Rome
-  external_url: https://casacarusio.duckdns.org
-  internal_url: http://192.168.1.111:8123
+  external_url: !secret external_url
+  internal_url: !secret internal_url
   allowlist_external_dirs: #Serve per far vedere il db dal sensore della dimensione
    - /config
 
@@ -17,23 +17,16 @@ http:
 
 default_config:
 
-
 frontend:
   themes: !include_dir_merge_named themes
 
 hacs:
-  token: eb16fbd9fd54ec39aa5c2230fafe118af32e6917
+  token: !secret hacs_token
 
 spotcast:
   sp_dc: !secret sp_dc
   sp_key: !secret sp_key
 
-mobile_app:
-discovery:
-ios:
-cloud:
-  
-  
 logger:
   default: info
   logs:
@@ -44,9 +37,9 @@ logger:
 
 mqtt:
     broker: core-mosquitto
-    username: DVES_USER
+    username: !secret mqtt_username
     password: !secret mqtt_password 
-# Text to speech
+
 tts:
   - platform: google_translate
 
@@ -55,18 +48,19 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
-#lovelace:
-#  mode: yaml
+light: !include lights.yaml         
+sensor: !include sensors.yaml       
+switch: !include switches.yaml      
+cover: !include covers.yaml        
 
-light: !include lights.yaml         #Sonoff Mini
-sensor: !include sensors.yaml       #ESP32
-switch: !include switches.yaml      #Spine Blitzwolf SPH2
-cover: !include covers.yaml        #Persiane (Sonoff Dual)
-shopping_list:
-#customize: !include customize.yaml
 history: !include history.yaml
 shell_command: !include shellCommands.yaml
 
+mobile_app:
+discovery:
+ios:
+cloud:
+shopping_list:
 wake_on_lan:
 smartir:
     

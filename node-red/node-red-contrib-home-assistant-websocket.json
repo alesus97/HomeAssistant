@@ -2,7 +2,15 @@
   "nodes": {
     "c74943e1_f9673": {
       "lastPayload": {
-        "state": "Non Disponibile",
+        "state": "22.00",
+        "attributes": {
+          "": ""
+        }
+      }
+    },
+    "e337fa6e_05aa78": {
+      "lastPayload": {
+        "state": "15.44",
         "attributes": {
           "": ""
         }
