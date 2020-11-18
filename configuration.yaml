@@ -27,13 +27,13 @@ spotcast:
   sp_dc: !secret sp_dc
   sp_key: !secret sp_key
 
-logger:
-  default: info
-  logs:
-    custom_components.hacs: debug
-    hacs: debug
-    queueman: debug
-    AIOGitHubAPI: debug
+#logger:
+#  default: info
+#  logs:
+#    custom_components.hacs: debug
+#    hacs: debug
+#    queueman: debug
+#    AIOGitHubAPI: debug
 
 mqtt:
     broker: core-mosquitto
