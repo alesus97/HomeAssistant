@@ -1,18 +1,4 @@
   - platform: mqtt
-    name: "Applique Camera Alessio"
-    state_topic: "stat/sonoffDual/LuceCameraAlessio/RESULT"  
-    value_template: "{{ value_json.POWER2 }}"
-    command_topic: "cmnd/sonoffDual/LuceCameraAlessio/POWER2"
-    payload_on: "ON"
-    payload_off: "OFF"
-    availability_topic: "tele/sonoffDual/LuceCameraAlessio/LWT"
-    payload_available: "Online"
-    payload_not_available: "Offline"
-    qos: 1
-    retain: false
-    icon: mdi:wall-sconce-round
-  
-  - platform: mqtt
     name: "Spina 1"
     state_topic: "stat/spina1/POWER"
     command_topic: "cmnd/spina1/POWER"

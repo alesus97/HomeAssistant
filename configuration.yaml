@@ -7,6 +7,7 @@ homeassistant:
   time_zone: Europe/Rome
   external_url: !secret external_url
   internal_url: !secret internal_url
+  customize: !include customize.yaml
   allowlist_external_dirs: #Serve per far vedere il db dal sensore della dimensione
    - /config
 
@@ -89,3 +90,42 @@ climate:
     temperature_sensor: sensor.temperatura_camera_alessio
     humidity_sensor: sensor.temperatura_camera_alessio
     power_sensor: sensor.temperatura_camera_alessio
+    
+    
+    
+    
+    
+    
+    
+    
+#monitor_docker:
+#  - name: Docker
+#    containers:
+#      - appdaemon
+#      - db-dsmr
+#      - db-hass
+#      - deconz
+#      - dsmr
+#      - hass
+#      - influxdb
+#      - mosquitto
+#      - nodered
+#      - unifi
+#    rename:
+#      db-dsmr: "Database DSMR-Reader"
+#      appdaemon: AppDaemon
+#      db-hass: Database Home Assistant
+#      dsmr: "DSMR-Reader"
+#      deconz: DeCONZ
+#      hass: Home Assistant
+#      influxdb: InfluxDB
+#      mosquitto: Mosquitto
+#      nodered: "Node-RED"
+#      unifi: UniFi
+#    monitored_conditions:
+#      - version
+#      - containers_running
+#      - containers_total
+#      - state
+#      - status
+#      - memory

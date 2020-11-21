@@ -5,7 +5,6 @@
 !*.yaml
 !.gitignore
 !*.md
-!.BackupConbee2
 
 # Ignore folders.
 .google.token
