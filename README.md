@@ -10,12 +10,13 @@
 [![HA Version](https://img.shields.io/badge/Original%20Home%20Assistant-0.14%20-darkblue)](https://github.com/home-assistant/core/releases/0.14)
 [![HA Community](https://img.shields.io/badge/HA%20community-forum-orange)](https://community.home-assistant.io/u/geekoftheweek/summary)
 
+v<a href="https://imgbb.com/"><img src="https://i.ibb.co/rd2Bb1L/41-WVzq-Dw7-TL-AC-SX425.jpg" alt="41-WVzq-Dw7-TL-AC-SX425" border="0"></a>
 
-
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/GRpCKV3/41-WVzq-Dw7-TL-AC-SX425.jpg" alt="41-WVzq-Dw7-TL-AC-SX425" border="0"></a>
 
 | Device  | Image|Quantity | Connection | Home Assistant | Notes |
 | -------------| ------ | :---: | ------------- | ------------- | ------------- |
-| [Sonoff Mini](https://amzn.to/2HlmcED) | (image url) | 3 | Wi-Fi | [MQTT]| [DIY](https://tasmota.github.io/docs/Sonoff-DIY/)  jumper [Tasmota] flashed|
+| [Sonoff Mini](https://amzn.to/2HlmcED) | ![image](https://i.ibb.co/rd2Bb1L/41-WVzq-Dw7-TL-AC-SX425.jpg) | 3 | Wi-Fi | [MQTT]| [DIY](https://tasmota.github.io/docs/Sonoff-DIY/)  jumper [Tasmota] flashed|
 | [Sonoff Dual](https://amzn.to/2UIeJCw) | (image url) |2 | Wi-Fi| [MQTT]| Hardware [Tasmota] flashed|
 | [Blitzwolf BW-SHP2](https://amzn.to/336IQIy) | (image url) |2 | Wi-Fi| [MQTT]| [Tasmota] flashed with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert)|
 | [Wifi RGB Controller](https://amzn.to/397N1Yt) | (image url) | 1 | Wi-Fi| [Flux Led](https://www.home-assistant.io/integrations/flux_led/) | Led strip RGB controller|
