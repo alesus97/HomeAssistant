@@ -1,14 +1,10 @@
-# HomeAssistant
+# HomeAssistant Config
 
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![GitHub stars](https://img.shields.io/github/stars/alesus97/HomeAssistant)](https://github.com/alesus97/HomeAssistant)
+[![GitHub last commit](https://img.shields.io/github/last-commit/alesus97/HomeAssistant)](https://github.com/alesus97/HomeAssistant/commits/master)
+[![HA Version](https://img.shields.io/badge/Running%20Home%20Assistant-0.118.2%20-darkblue)](https://github.com/home-assistant/home-assistant/releases/latest)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-[![GitHub stars](https://img.shields.io/github/stars/geekofweek/homeassistant.svg?style=plasticr)](https://github.com/alesus97/HomeAssistant)
-[![GitHub last commit](https://img.shields.io/github/last-commit/geekofweek/homeassistant.svg?style=plasticr)](https://github.com/geekofweek/homeassistant/commits/master)
-[![HA Version](https://img.shields.io/badge/Running%20Home%20Assistant-0.118.0%20-darkblue)](https://github.com/home-assistant/home-assistant/releases/latest)
-[![HA Version](https://img.shields.io/badge/Original%20Home%20Assistant-0.14%20-darkblue)](https://github.com/home-assistant/core/releases/0.14)
-[![HA Community](https://img.shields.io/badge/HA%20community-forum-orange)](https://community.home-assistant.io/u/geekoftheweek/summary)
 
 
 | Device  | Image|Quantity | Connection | Home Assistant | Notes |
