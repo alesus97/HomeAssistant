@@ -10,9 +10,6 @@
 [![HA Version](https://img.shields.io/badge/Original%20Home%20Assistant-0.14%20-darkblue)](https://github.com/home-assistant/core/releases/0.14)
 [![HA Community](https://img.shields.io/badge/HA%20community-forum-orange)](https://community.home-assistant.io/u/geekoftheweek/summary)
 
-v<a href="https://imgbb.com/"><img src="https://i.ibb.co/rd2Bb1L/41-WVzq-Dw7-TL-AC-SX425.jpg" alt="41-WVzq-Dw7-TL-AC-SX425" border="0"></a>
-
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/GRpCKV3/41-WVzq-Dw7-TL-AC-SX425.jpg" alt="41-WVzq-Dw7-TL-AC-SX425" border="0"></a>
 
 | Device  | Image|Quantity | Connection | Home Assistant | Notes |
 | -------------| ------ | :---: | ------------- | ------------- | ------------- |
