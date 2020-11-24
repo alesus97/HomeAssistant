@@ -4,24 +4,21 @@
 [![GitHub stars](https://img.shields.io/github/stars/alesus97/HomeAssistant)](https://github.com/alesus97/HomeAssistant)
 [![GitHub last commit](https://img.shields.io/github/last-commit/alesus97/HomeAssistant)](https://github.com/alesus97/HomeAssistant/commits/master)
 [![HA Version](https://img.shields.io/badge/Running%20Home%20Assistant-0.118.2%20-darkblue)](https://github.com/home-assistant/home-assistant/releases/latest)
-
+# Devices
+#
+#
 
 
 | Device  | Image|Quantity | Connection | Home Assistant | Notes |
 | -------------| ------ | :---: | ------------- | ------------- | ------------- |
-| [Sonoff Mini](https://amzn.to/2HlmcED) | ![image](https://i.ibb.co/rd2Bb1L/41-WVzq-Dw7-TL-AC-SX425.jpg) | 3 | Wi-Fi | [MQTT]| [DIY](https://tasmota.github.io/docs/Sonoff-DIY/)  jumper [Tasmota] flashed|
-| [Sonoff Dual](https://amzn.to/2UIeJCw) | (image url) |2 | Wi-Fi| [MQTT]| Hardware [Tasmota] flashed|
-| [Blitzwolf BW-SHP2](https://amzn.to/336IQIy) | (image url) |2 | Wi-Fi| [MQTT]| [Tasmota] flashed with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert)|
-| [Wifi RGB Controller](https://amzn.to/397N1Yt) | (image url) | 1 | Wi-Fi| [Flux Led](https://www.home-assistant.io/integrations/flux_led/) | Led strip RGB controller|
-| [Xiaomi Aqara Multisensor](https://amzn.to/35N2JWE) |(image url) | 1 | Zigbee| [deConz]| Temperature, humidity, pressure and battery sensor|
-| [Broadlink RM3Mini](https://amzn.to/2IW48kU) |(image url) | 1 | Wi-Fi| [deConz]| Universal infrared remote|
-| [Conbee II](https://amzn.to/2IW48kU) |(image url) | 1 | USB| [deConz] | USB Zigbee gateway|
+| [Sonoff Mini](https://amzn.to/2HlmcED) | ![](https://i.ibb.co/rd2Bb1L/41-WVzq-Dw7-TL-AC-SX425.jpg) | 3 | Wi-Fi | [MQTT]| [DIY](https://tasmota.github.io/docs/Sonoff-DIY/)  jumper [Tasmota] flashed|
+| [Sonoff Dual](https://amzn.to/2UIeJCw) | ![](https://i.ibb.co/Dw1w9yz/Sonoff-Dual.jpg) |2 | Wi-Fi| [MQTT]| Hardware [Tasmota] flashed|
+| [Blitzwolf BW-SHP2](https://amzn.to/336IQIy) | ![](https://i.ibb.co/2sbbsmy/Blitzwolf-BW-SHP2.jpg) |2 | Wi-Fi| [MQTT]| [Tasmota] flashed with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert)|
+| [Wifi RGB Controller](https://amzn.to/397N1Yt) | ![](https://i.ibb.co/P5f90mg/rgb-Controller.jpg) | 1 | Wi-Fi| [Flux Led](https://www.home-assistant.io/integrations/flux_led/) | Led strip RGB controller|
+| [Xiaomi Aqara Multisensor](https://amzn.to/35N2JWE) |![](https://i.ibb.co/hskTfq3/aqara-Multisensor.jpg) | 1 | Zigbee| [deConz]| Temperature, humidity, pressure and battery sensor|
+| [Broadlink RM3Mini](https://amzn.to/2IW48kU) |![](https://i.ibb.co/6Z01sk1/Broadlink-RM3-Mini.jpg) | 1 | Wi-Fi| [deConz]| Universal infrared remote|
+| [Conbee II](https://amzn.to/2IW48kU) |![](https://i.ibb.co/Hzpr7Ph/conbee2-aquacolor2.jpg) | 1 | USB| [deConz] | USB Zigbee gateway|
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
-
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
 
 # New Features!
 
@@ -29,24 +26,7 @@ Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered H
   - **23.11.2020**: Startup sync automation (Lights, Covers and Climate)
  
 
-You can also:
-  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
-  - Drag and drop markdown and HTML files into Dillinger
-  - Export documents as Markdown, HTML and PDF
-
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
-### Integration & Addons
+# Integration & Addons
 
 In my comfiguration I use the following integrations
 
@@ -171,7 +151,7 @@ License
 MIT
 
 
-**Free Software, Hell Yeah!**
+**Free Softwar**
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
@@ -179,22 +159,3 @@ MIT
    [Tasmota]: <https://tasmota.github.io/docs/>
    [deConz]: <https://www.home-assistant.io/integrations/broadlink/>
    [HACS]: <https://hacs.xyz/docs/installation/manual>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
