@@ -5,8 +5,6 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/alesus97/HomeAssistant)](https://github.com/alesus97/HomeAssistant/commits/master)
 [![HA Version](https://img.shields.io/badge/Running%20Home%20Assistant-0.118.2%20-darkblue)](https://github.com/home-assistant/home-assistant/releases/latest)
 # Devices
-#
-#
 
 
 | Device  | Image|Quantity | Connection | Home Assistant | Notes |
@@ -16,7 +14,7 @@
 | [Blitzwolf BW-SHP2](https://amzn.to/336IQIy) | ![](https://i.ibb.co/2sbbsmy/Blitzwolf-BW-SHP2.jpg) |2 | Wi-Fi| [MQTT]| [Tasmota] flashed with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert)|
 | [Wifi RGB Controller](https://amzn.to/397N1Yt) | ![](https://i.ibb.co/P5f90mg/rgb-Controller.jpg) | 1 | Wi-Fi| [Flux Led](https://www.home-assistant.io/integrations/flux_led/) | Led strip RGB controller|
 | [Xiaomi Aqara Multisensor](https://amzn.to/35N2JWE) |![](https://i.ibb.co/hskTfq3/aqara-Multisensor.jpg) | 1 | Zigbee| [deConz]| Temperature, humidity, pressure and battery sensor|
-| [Broadlink RM3Mini](https://amzn.to/2IW48kU) |![](https://i.ibb.co/6Z01sk1/Broadlink-RM3-Mini.jpg) | 1 | Wi-Fi| [deConz]| Universal infrared remote|
+| [Broadlink RM3Mini](https://amzn.to/2IW48kU) |![](https://i.ibb.co/6Z01sk1/Broadlink-RM3-Mini.jpg) | 1 | Wi-Fi| [Broadlink]| Universal infrared remote|
 | [Conbee II](https://amzn.to/2IW48kU) |![](https://i.ibb.co/Hzpr7Ph/conbee2-aquacolor2.jpg) | 1 | USB| [deConz] | USB Zigbee gateway|
 
 
@@ -159,3 +157,4 @@ MIT
    [Tasmota]: <https://tasmota.github.io/docs/>
    [deConz]: <https://www.home-assistant.io/integrations/broadlink/>
    [HACS]: <https://hacs.xyz/docs/installation/manual>
+   [Broadlink]: <https://www.home-assistant.io/integrations/broadlink/>
