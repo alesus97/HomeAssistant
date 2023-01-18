@@ -1,0 +1,28 @@
+
+- cal_id: alesus97@gmail.com
+  entities:
+  - device_id: alesus97_gmail_com
+    ignore_availability: true
+    name: alesus97@gmail.com
+    track: true
+
+- cal_id: it.italian#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: festivita_in_italia
+    ignore_availability: true
+    name: "Festivit\xE0 in Italia"
+    track: true
+
+- cal_id: addressbook#contacts@group.v.calendar.google.com
+  entities:
+  - device_id: compleanni
+    ignore_availability: true
+    name: Compleanni
+    track: true
+
+- cal_id: 271q0upfs3pogocbdh24fvski99ajd6l@import.calendar.google.com
+  entities:
+  - device_id: 2021_fia_formula_one_world_championship_race_calendar
+    ignore_availability: true
+    name: 2021 FIA Formula One World Championship Race Calendar
+    track: true

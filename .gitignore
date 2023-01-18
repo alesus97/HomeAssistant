@@ -1,0 +1,25 @@
+
+!*.yaml
+!.gitignore
+!*.md
+
+#ignore Folders
+.storage
+.cloud
+custom_components
+www
+tts
+themes
+node-red
+image
+dwains-dashboard
+deps 
+blueprints
+
+home-assistant.log*
+*.db*
+
+
+
+
+secrets.yaml

@@ -1,0 +1,109 @@
+start_netflix_philipstv:
+  alias: Start Netflix Philips TV
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Philips TV
+      command:
+      - power
+      - netflix
+    entity_id: remote.broadlink_rm3mini_alessio_remote
+  mode: single
+  icon: 'mdi: nerflix'
+condizionatorealessio_turbo:
+  alias: Turbo condizionatore alessio
+  sequence:
+  - service: remote.send_command
+    data:
+      device: CondizionatoreAlessio
+      command: turbo
+    entity_id: remote.broadlink_rm3mini_alessio_remote
+  mode: single
+  icon: mdi:weather-hurricane
+'1638127848360':
+  alias: Nuovo script
+  sequence:
+  - service: light.turn_on
+    target:
+      device_id: 2b8840f6aceb5a5b17335a108fec4ee5
+    data:
+      effect: Ocean
+  mode: single
+pulisci_corridoio:
+  alias: Pulisci Corridoio
+  sequence:
+  - service: vacuum.send_command
+    data:
+      command: spot_area
+      params:
+        rooms: 1
+        cleanings: 2
+    target:
+      device_id: 69ff686cc02d3ecaa5a06c1616d1b6a5
+  mode: single
+  icon: mdi:account
+pulisci_cucina:
+  alias: Pulisci Cucina
+  sequence:
+  - service: vacuum.send_command
+    data:
+      command: spot_area
+      params:
+        rooms: 2
+        cleanings: 2
+    target:
+      device_id: 69ff686cc02d3ecaa5a06c1616d1b6a5
+  mode: single
+  icon: mdi:account
+pulisci_soggiorno:
+  alias: Pulisci Soggiorno
+  sequence:
+  - service: vacuum.send_command
+    data:
+      command: spot_area
+      params:
+        rooms: 0
+        cleanings: 2
+    target:
+      device_id: 69ff686cc02d3ecaa5a06c1616d1b6a5
+  mode: single
+  icon: mdi:account
+pulisci_camera_chiara:
+  alias: Pulisci Camera Chiara
+  sequence:
+  - service: vacuum.send_command
+    data:
+      command: spot_area
+      params:
+        rooms: 4
+        cleanings: 2
+    target:
+      device_id: 69ff686cc02d3ecaa5a06c1616d1b6a5
+  mode: single
+  icon: mdi:account
+pulisci_camera_alessio:
+  alias: Pulisci Camera Alessio
+  sequence:
+  - service: vacuum.send_command
+    data:
+      command: spot_area
+      params:
+        rooms: 5
+        cleanings: 2
+    target:
+      device_id: 69ff686cc02d3ecaa5a06c1616d1b6a5
+  mode: single
+  icon: mdi:account
+pulisci_camera_da_letto:
+  alias: Pulisci Camera da Letto
+  sequence:
+  - service: vacuum.send_command
+    data:
+      command: spot_area
+      params:
+        rooms: 6
+        cleanings: 2
+    target:
+      device_id: 69ff686cc02d3ecaa5a06c1616d1b6a5
+  mode: single
+  icon: mdi:account

@@ -1,0 +1,76 @@
+- id: 7ddaaeef32d04820bf8826eb465a64f2
+  alias: Sync Tasmota states
+  description: Sincronizza stato luci e tapparelle al riavvio di HA
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/state
+      payload: ''
+  - service: mqtt.publish
+    data:
+      topic: tasmotas/cmnd/state
+      payload: ''
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/SHUTTERPOSITION
+      payload: ''
+  - service: mqtt.publish
+    data:
+      topic: cmnd/sonoffMini/Riscaldamento/POWER
+      payload: ''
+  initial_state: true
+  mode: single
+- id: '1606073382946'
+  alias: 'Sync Riscaldamento '
+  description: Accendi riscaldamento dopo riavvio di HA se il sonoff del riscaldamento
+    è acceso
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: d6656afd03fe1e7535f12cfbca4a2bf0
+    entity_id: switch.riscaldamento
+    domain: switch
+  condition: []
+  action:
+  - service: climate.turn_on
+    data: {}
+    entity_id: climate.riscaldamento
+  mode: single
+- id: '1659707648352'
+  alias: Set Home Assistant theme at startup
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:
+  - service: frontend.set_theme
+    data:
+      name: Google Theme
+      mode: dark
+- id: '1672418851671'
+  alias: Prova Notifica
+  description: ''
+  trigger:
+  - platform: device
+    device_id: 52ee30ef4e8bbe9e618f18b6c60cb67d
+    domain: device_tracker
+    entity_id: device_tracker.m2002j9g
+    type: leaves
+    zone: zone.casa_anna
+  condition:
+  - condition: and
+    conditions:
+    - condition: device
+      device_id: 1e85ed229e9f2eb8aad45af403952e8a
+      domain: device_tracker
+      entity_id: device_tracker.iphone_di_alessio
+      type: is_home
+  action:
+  - device_id: 1e85ed229e9f2eb8aad45af403952e8a
+    domain: mobile_app
+    type: notify
+    message: Papà sta tornando
+    title: Home Assistant
+  mode: single

@@ -1,0 +1,6 @@
+
+# Accensione
+  - platform: wake_on_lan
+    mac: "2C-F0-5D-9E-56-31" 
+    host: 192.168.1.82
+    name: "Accensione alessio PC Fisso"
